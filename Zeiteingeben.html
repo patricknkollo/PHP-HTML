@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="loginSeite_Style.css" />
+    <title>zeitErfassen</title>
+  </head>
+
+  <body>
+    <form method="post" action="Zeittraitement.php">
+      <fieldset>
+        <h1>Willkommen</h1>
+        <p>
+          <label for="debut">Anfangszeit : </label>
+          <input
+            type="datetime-local"
+            name="anfangszeit"
+            value="<?php echo date('d/m/Y h:i:s');?>"
+            id="debut"
+            required
+          />
+          <br />
+
+          <label for="fin">Endezeit : </label>
+          <input
+            type="datetime-local"
+            name="endezeit"
+            value="<?php echo date('d/m/Y h:i:s');?>"
+            id="fin"
+            required
+          />
+          <br />
+          <label for="mid">id : </label>
+          <input type="number" name="mitarbeiterid" id="mid" required /> <br />
+
+          <!-- <label for="password">Password : </label>
+					<input type="password"  name="password" id="password"/> -->
+        </p>
+        <input type="submit" value=" Senden" />
+      </fieldset>
+    </form>
+    <p>
+      deuxieme page.<br />
+      <!-- pour la mise en valeur on utilise em->pour italic, strong-> pour gras et mark-> pour marker le texte -->
+    </p>
+  </body>
+</html>

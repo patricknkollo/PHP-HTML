@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="loginSeite_Style.css" />
+    <title>registrierung</title>
+  </head>
+
+  <body>
+    <form method="post" action="traitement.php">
+      <fieldset>
+        <h1>Willkommen</h1>
+        <p>
+          <label for="nom">Name : </label>
+          <input type="text" name="name" id="nom" autofocus required /> <br />
+
+          <label for="prenom">Vorname : </label>
+          <input type="text" name="vorname" id="prenom" required /> <br />
+
+          <label for="geburtsdatum">Geburtsdatum : </label>
+          <input type="date" name="geburtsdatum" id="geburtsdatum" /> <br />
+
+          <label for="psswd">Password : </label>
+          <input type="password" name="password" id="psswd" /> <br />
+
+          <label for="boitemail"> E-mail : </label>
+          <input type="email" name="email" id="boitemail" /> <br />
+
+          Sexe :
+          <!-- <label for="feminin"> Weiblich : </label>
+					<input type="radio"  name="sexe" value="F" id="feminin" 
+					<label for="masculin"> männlich : </label>
+					<input type="radio"  name="sexe" value="M" id="masculin" /> -->
+          <label for="sexe">Sexe : </label> <br />
+          <select name="geschlecht" id="sexe" required>
+            <option value="F">Weiblich</option>
+            <option value="M">männlich</option>
+          </select>
+        </p>
+        <input type="submit" value=" registrieren" />
+      </fieldset>
+    </form>
+
+    <!-- pour la mise en valeur on utilise em->pour italic, strong-> pour gras et mark-> pour marker le texte -->
+  </body>
+</html>
